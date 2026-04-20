@@ -3,21 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Site</title>
+  <meta name="description" content="Yesodos provides individualized Jewish and secular education for girls in grades 1-8 who learn differently." />
+  <title>Yesodos | Specialized Education for Girls</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>My New Website</h1>
-    <p>Coming soon</p>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Yesodos home">
+      <img src="assets/yesodos-logo.jpg" alt="Yesodos" />
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>This site is live on Netlify.</p>
+    <section class="hero home-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Bais Rochel Special Education Program</p>
+        <h1>For the girl who learns differently and deserves better.</h1>
+        <p class="hero-text">Yesodos empowers girls in grades 1-8 with individualized academic and behavioral plans, differentiated instruction, and a warm environment where every student can grow her way.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="contact.html">Request Information</a>
+          <a class="button secondary" href="services.html">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Program highlights">
+        <img src="assets/flyer-student.jpg" alt="Bais Rochel School for Girls" />
+        <div>
+          <strong>Academic, social, and emotional growth</strong>
+          <p>Support is built around each student, updated as she progresses, and delivered with care.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Our Mission</p>
+        <h2>Premier Jewish and secular education with each child in mind.</h2>
+      </div>
+      <p>Formerly Maalos, Yesodos has been redesigned for students who need more than a regular classroom can offer. Our program helps girls succeed scholastically, socially, and emotionally through individualized goals, devoted teachers, and practical tools for life.</p>
+    </section>
+
+    <section class="section feature-band">
+      <div class="feature">
+        <span>1-8</span>
+        <p>Serving girls in elementary and junior high grades.</p>
+      </div>
+      <div class="feature">
+        <span>1:1</span>
+        <p>Individualized plans that change with student progress.</p>
+      </div>
+      <div class="feature">
+        <span>360</span>
+        <p>Academic, behavioral, social, and emotional support.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>Purposeful support for the whole student.</h2>
+      </div>
+      <div class="card-grid">
+        <article class="service-card">
+          <h3>Individualized Learning Plans</h3>
+          <p>Academic goals are tailored to the student and adjusted as skills develop.</p>
+        </article>
+        <article class="service-card">
+          <h3>Differentiated Instruction</h3>
+          <p>Experienced teachers use methods that help students access learning with confidence.</p>
+        </article>
+        <article class="service-card">
+          <h3>Behavioral Guidance</h3>
+          <p>Plans support classroom success, self-regulation, and steady personal growth.</p>
+        </article>
+      </div>
+      <div class="centered-action">
+        <a class="button secondary" href="services.html">View All Services</a>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Voices</p>
+        <h2>What families look for at Yesodos.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote>
+          <p>"She is capable, creative, loving, and talented. She learns differently, and she deserves a path that sees all of her strengths."</p>
+          <cite>Yesodos family perspective</cite>
+        </blockquote>
+        <blockquote>
+          <p>"The goal is not only to help a student keep up. It is to give her tools, confidence, and a sense of belonging."</p>
+          <cite>Program philosophy</cite>
+        </blockquote>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div>
+      <img src="assets/yesodos-logo.jpg" alt="Yesodos" />
+      <p>Empowering each student to grow in her own unique way.</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p><a href="tel:18453525000">845.352.5000 ext. 1107</a></p>
+      <p><a href="mailto:yesodosbaisrochel@gmail.com">yesodosbaisrochel@gmail.com</a></p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

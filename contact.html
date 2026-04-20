@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Yesodos to request an application or more information." />
+  <title>Contact | Yesodos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Yesodos home">
+      <img src="assets/yesodos-logo.jpg" alt="Yesodos" />
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Contact Yesodos</p>
+        <h1>Request an application or more information.</h1>
+        <p class="hero-text">Share a few details, or reach out directly by phone or email. The flyer notes current application opportunities for girls entering grades 1-6.</p>
+      </div>
+      <div class="hero-card">
+        <img src="assets/flyer-student.jpg" alt="Bais Rochel School for Girls" />
+        <div>
+          <strong>Yesodos at Bais Rochel</strong>
+          <p>A warm, nurturing setting with opportunities for integration and growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-grid">
+      <aside class="contact-panel">
+        <div>
+          <p class="eyebrow">Reach Out</p>
+          <h2>Let's talk about fit.</h2>
+        </div>
+        <p><strong>Phone:</strong><br /><a href="tel:18453525000">845.352.5000 ext. 1107</a></p>
+        <p><strong>Email:</strong><br /><a href="mailto:yesodosbaisrochel@gmail.com">yesodosbaisrochel@gmail.com</a></p>
+        <p>For applications, placement questions, and program information, contact the Yesodos office directly.</p>
+      </aside>
+
+      <form class="contact-form" action="#" method="post">
+        <label>
+          Parent or guardian name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Email address
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone" autocomplete="tel" />
+        </label>
+        <label>
+          Student grade
+          <select name="grade">
+            <option value="">Select a grade</option>
+            <option>Entering grade 1</option>
+            <option>Entering grade 2</option>
+            <option>Entering grade 3</option>
+            <option>Entering grade 4</option>
+            <option>Entering grade 5</option>
+            <option>Entering grade 6</option>
+            <option>Grades 7-8 inquiry</option>
+          </select>
+        </label>
+        <label>
+          How can we help?
+          <textarea name="message" placeholder="Tell us what you would like to know."></textarea>
+        </label>
+        <p class="form-note">This is a front-end form UI. Use the phone or email above to send an official request.</p>
+        <div class="form-actions">
+          <button class="button primary" type="submit">Prepare Request</button>
+        </div>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <img src="assets/yesodos-logo.jpg" alt="Yesodos" />
+      <p>Empowering each student to grow in her own unique way.</p>
+    </div>
+    <div>
+      <h2>Contact</h2>
+      <p><a href="tel:18453525000">845.352.5000 ext. 1107</a></p>
+      <p><a href="mailto:yesodosbaisrochel@gmail.com">yesodosbaisrochel@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
